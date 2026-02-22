@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+    <style>
+        body {
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="max-w-6xl mx-auto px-4 py-10 bg-gray-50">
+
+    <!-- Header -->
+    <header class="mb-10">
+        <h1 class="text-3xl font-bold mb-6">Job Application Tracker</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-white shadow rounded-2xl p-6">
+                <p class="text-sm text-gray-500">Total</p>
+                <h2 id="total" class="text-2xl font-bold">8</h2>
+            </div>
+
+            <div class="bg-white shadow rounded-2xl p-6">
+                <p class="text-sm text-gray-500">Interview</p>
+                <h2 id="interviewCount" class="text-2xl font-bold text-green-500">0</h2>
+            </div>
+
+            <div class="bg-white shadow rounded-2xl p-6">
+                <p class="text-sm text-gray-500">Rejected</p>
+                <h2 id="rejectedCount" class="text-2xl font-bold text-red-500">0</h2>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Available Jobs  -->
+    <section class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold">Available Jobs</h3>
+        <p class="text-gray-600">8 jobs</p>
+    </section>
+
+    <!--  Buttons -->
+    <section class="mb-6">
+        <div class="flex gap-3 flex-wrap">
+            <button class="filter-btn bg-blue-600 text-white px-4 py-2 rounded-xl">All</button>
+            <button class="filter-btn bg-gray-200 px-4 py-2 rounded-xl">Interview</button>
+            <button class="filter-btn bg-gray-200 px-4 py-2 rounded-xl">Rejected</button>
+        </div>
+    </section>
+
+    <!-- Job Card  -->
+     <!-- Job 1 -->
+    <section id="allJobs">
+
+        <div class="job bg-white shadow-md rounded-2xl p-6 space-y-6">
+
+            <!-- Top -->
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="font-semibold text-lg">Mobile First Corp</p>
+                    <h2 class="text-sm text-gray-600 ">React Native Developer</h2>
+                </div>
+
+                <button class="text-gray-400 hover:text-red-500">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+            </div>
+
+            <!-- Location and Salary -->
+            <p class="text-gray-500 text-sm">
+                Remote • Full-time • $130,000 - $175,000
+            </p>
+
+            <!-- Status and button -->
+            <div>
+                <span class="bg-blue-50 text-blue-300 px-4 py-2 rounded-xl text-lg">
+                    NOT APPLIED
+                </span>
+
+                <p class="mt-4 text-gray-600 text-sm">
+                    Build cross-platform mobile applications using React Native.
+                    Work on products used by millions of users worldwide.
+                </p>
+
+                <div class="mt-6 flex gap-3">
+                    <button class="btn btn-outline text-green-500">
+                        Interview
+                    </button>
+                    <button class="btn btn-outline text-red-500">
+                        Rejected
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
