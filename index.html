@@ -438,6 +438,45 @@
     </section>
 
 <!-- No Job Available -->
+
+    <header class="mb-10 mt-20">
+        <h1 class="text-3xl font-bold mb-6">Job Application Tracker</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-white  p-6">    <!--  shadow rounded-2xl-->
+                <p class="text-sm text-gray-500">Total</p>
+                <h2 id="total" class="text-2xl font-bold">8</h2>
+            </div>
+
+            <div class="bg-white p-6"> <!--  shadow rounded-2xl-->
+                <p class="text-sm text-gray-500">Interview</p>
+                <h2 id="interviewCount" class="text-2xl font-bold text-green-500">0</h2>
+            </div>
+
+            <div class="bg-white p-6"> <!--  shadow rounded-2xl-->
+                <p class="text-sm text-gray-500">Rejected</p>
+                <h2 id="rejectedCount" class="text-2xl font-bold text-red-500">0</h2>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Available Jobs  -->
+    <section class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold">Available Jobs</h3>
+        <p class="text-gray-600">0 jobs</p>
+    </section>
+
+    <!--  Buttons -->
+    <section class="mb-6">
+        <div class="flex gap-3 flex-wrap">
+            <button class="filter-btn bg-white text-black px-4 py-2 rounded-xl">All</button>
+            <button class="filter-btn bg-white px-4 py-2 rounded-xl">Interview</button>
+            <button class="filter-btn bg-white px-4 py-2 rounded-xl">Rejected</button>
+        </div>
+    </section>
+
 <section class="-mt-4">
 
         <div class="nojob mx-auto bg-white shadow-md  p-8 text-center">
