@@ -16,9 +16,10 @@ d. querySelectorAll → Selects all elements that match a CSS selector.
 Ans: use document.createElement() to insert it into the DOM.
 
 ### 3. What is Event Bubbling? And how does it work?
-Ans: 
+Ans: Event Bubbling is a JavaScript event mechanism where an event starts from the target element and then propagates (bubbles up) to its parent elements in the DOM hierarchy.
+
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
-Ans: 
+Ans: Event Delegation is a JavaScript technique where a parent element handles events for its child elements using event bubbling, making the code more efficient and flexible.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
-Ans: 
+Ans: preventDefault() stops the browser’s default action, while stopPropagation() stops the event from bubbling up to parent elements.
